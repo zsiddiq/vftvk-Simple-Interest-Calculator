@@ -1,9 +1,13 @@
 function compute()
 {
     p = Number(document.getElementById("principal").value);
-    r = Number(document.getElementById("rate").value);
+    //r = Number(document.getElementById("rate").value);
     y = Number(document.getElementById("years").value);
-    a=p*(r*(1/100)*y;
-    document.getElementById("demoa").value=r;
+    var rangeslider = document.getElementById("sliderRange"); 
+   var output = document.getElementById("demo"); 
+    output.innerHTML = rangeslider.value; 
+  
+   rangeslider.oninput = function() { 
+   output.innerHTML = this.value; 
 }
         
