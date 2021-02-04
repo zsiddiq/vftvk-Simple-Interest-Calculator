@@ -9,6 +9,7 @@ function compute()
     document.getElementById("demoa").innerHTML=texta;
  
     r=document.getElementById("irate").innerHTML;
+ alert(r);
  if (isNaN(r) || r < 1) {
         textb = "Rate Input is not valid";
     }else{
