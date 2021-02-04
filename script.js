@@ -3,6 +3,8 @@ function compute()
     p=Number(document.getElementById("principal").value);
     if (isNaN(p) || p < 1) {
         text = "Amount Input is not valid";
+    }else{
+        text = "Amount Input is valid";
     }
     document.getElementById("demoa").innerHTML=text;
     r=Number(document.getElementById("irate").value);
