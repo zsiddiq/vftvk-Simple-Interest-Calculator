@@ -8,7 +8,7 @@ function compute()
     }
     document.getElementById("demoa").innerHTML=texta;
  
-    r=ParseFloat(document.getElementById("irate").value);
+    r=document.getElementById("irate").innerHTML;
  if (isNaN(r) || r < 1) {
         textb = "Rate Input is not valid";
     }else{
