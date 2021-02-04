@@ -1,5 +1,6 @@
 function compute()
-{var p,r,y,texta, textb,d;
+{var p,r,y,texta, textb,d, line1c, line2c, line3c, line4c;
+ line1c = "If you deposit ";
     p=Number(document.getElementById("principal").value);
     if (isNaN(p) || p < 1) {
         texta = "Amount Input is not valid";
@@ -19,6 +20,7 @@ function compute()
  
     y=Number(document.getElementById("years").value);
     d=p*r*y
+ document.getElementById("line1").value=line1c+p
    document.getElementById("answer").value=d;
 }
         
