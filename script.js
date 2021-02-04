@@ -20,7 +20,7 @@ function compute()
  
     y=Number(document.getElementById("years").value);
     d=p*r*y
- document.getElementById("line1").value=line1c+p;
+ document.getElementById("line1").innerHTML=line1c+p;
    document.getElementById("answer").value=d;
 }
         
