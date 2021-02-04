@@ -21,6 +21,7 @@ function compute()
     y=Number(document.getElementById("years").value);
     d=p*(r/100)*y
  document.getElementById("line1").innerHTML=line1c;
+ document.getElementById("amount").value=p;
    document.getElementById("answer").value=d;
 }
         
