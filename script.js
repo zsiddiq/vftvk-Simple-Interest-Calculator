@@ -19,7 +19,7 @@ function compute()
     document.getElementById("demob").innerHTML=textb;
  
     y=Number(document.getElementById("years").value);
-    d=(p*y*(r/100.0))
+    d=(p*(r/100.0)*y)
     document.getElementById("answer").value=d;
     document.getElementById("line1").innerHTML=line1c;
  
