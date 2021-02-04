@@ -10,7 +10,7 @@ function compute()
  
     r=document.getElementById("irate").innerHTML;
  //alert(r);
- if (isNaN(r) || r < 1) {
+ if (isNaN(r) || r < 0.5) {
         textb = "Rate Input is not valid";
     }else{
         textb = "Rate Input is valid";
