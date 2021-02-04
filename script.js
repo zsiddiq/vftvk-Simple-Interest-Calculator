@@ -7,7 +7,7 @@ function compute()
         text = "Amount Input is valid";
     }
     document.getElementById("demoa").innerHTML=text;
-    r=Number(document.getElementById("rate").value);
+    r=Number(document.getElementById("irate").value);
     y=Number(document.getElementById("years").value);
     d=p*r*y
    document.getElementById("answer").value=d;
