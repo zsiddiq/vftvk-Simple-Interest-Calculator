@@ -26,8 +26,8 @@ function compute()
     document.getElementById("answer").value=d;
  line1c= line1c + po + ",";
     document.getElementById("line1").innerHTML=line1c;
+ line2c= line2c + ro + "%";
  document.getElementById("line2").innerHTML=line2c;
-    document.getElementById("pout").innerHTML=po;
  document.getElementById("rout").innerHTML=ro;
  
 }
