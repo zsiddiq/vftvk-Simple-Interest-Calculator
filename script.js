@@ -1,5 +1,5 @@
 function compute()
-{var p,po,r,ro,y,dout, texta, textb,d, line1c, line2c, line3c, line4c;
+{var n,p,po,r,ro,x,y,dout, texta, textb,d, line1c, line2c, line3c, line4c;
  line1c = "If you deposit ";
  line2c = "at an interest rate of ";
  line3c = "You will receive an amount of ";
@@ -34,9 +34,8 @@ function compute()
  line3c = line3c + dout + ".";
  document.getElementById("line3").innerHTML=line3c;
  document.getElementById("rout").innerHTML=ro;
- var x = new Date();
- var n = x.getFullYear();
- n = n + y;
+ x = new Date();
+ n = (x.getFullYear())+y;
  line4c = line4c + n;
  document.getElementById("line4").innerHTML=line4c;
 }
