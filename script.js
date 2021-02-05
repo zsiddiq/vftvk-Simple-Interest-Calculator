@@ -33,7 +33,7 @@ function compute()
  document.getElementById("line2").innerHTML=line2c;
  line3c = line3c + dout + ".";
  document.getElementById("line3").innerHTML=line3c;
- document.getElementById("rout").innerHTML=ro;
+ //document.getElementById("rout").innerHTML=ro;
  //x = new Date();
  //n = (x.getFullYear())+y;
  //line4c = line4c + n;
