@@ -24,7 +24,7 @@ function compute()
     y=Number(document.getElementById("years").value);
     d=(p*(r/100.0)*y)
     document.getElementById("answer").value=d;
- line1c= line1c + po;
+ line1c= line1c + po + ",";
     document.getElementById("line1").innerHTML=line1c;
  document.getElementById("line2").innerHTML=line2c;
     document.getElementById("pout").innerHTML=po;
