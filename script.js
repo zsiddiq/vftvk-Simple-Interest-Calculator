@@ -34,8 +34,8 @@ function compute()
  line3c = line3c + dout + ".";
  document.getElementById("line3").innerHTML=line3c;
  document.getElementById("rout").innerHTML=ro;
- x = new Date();
- n = (x.getFullYear())+y;
+ //x = new Date();
+ //n = (x.getFullYear())+y;
  //line4c = line4c + n;
  document.getElementById("line4").innerHTML=line4c;
 }
