@@ -29,7 +29,7 @@ function compute()
     //document.getElementById("answer").value=d;
  x = new Date();
  n = (x.getFullYear())+y;
- line4c = line4c;
+ line4c = line4c + n;
  document.getElementById("line4").innerHTML=line4c;
  line1c= line1c + po + ",";
     document.getElementById("line1").innerHTML=line1c;
