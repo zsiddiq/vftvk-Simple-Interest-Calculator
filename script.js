@@ -27,6 +27,7 @@ function compute()
     d=(p*(r/100.0)*y);
     dout = d.toFixed(2);
     //document.getElementById("answer").value=d;
+ line4c = line4c;
  document.getElementById("line4").innerHTML=line4c;
  line1c= line1c + po + ",";
     document.getElementById("line1").innerHTML=line1c;
