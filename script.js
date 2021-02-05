@@ -3,6 +3,7 @@ function compute()
  line1c = "If you deposit ";
  line2c = "at an interest rate of ";
  line3c = "You will receive an amount of ";
+ line4c = "in the year ";
     p=Number(document.getElementById("principal").value);
     if (isNaN(p) || p < 1) {
         texta = "Amount Input is not valid";
@@ -33,6 +34,10 @@ function compute()
  line3c = line3c + dout + ".";
  document.getElementById("line3").innerHTML=line3c;
  document.getElementById("rout").innerHTML=ro;
- 
+ var x = new Date();
+ var n = x.getFullYear();
+ n = n + y;
+ line4c = line4c + n;
+ document.getElementById("line4").innerHTML=line4c;
 }
         
