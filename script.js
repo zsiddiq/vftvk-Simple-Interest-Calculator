@@ -1,11 +1,12 @@
 function compute()
-{var p,r,y,texta, textb,d, line1c, line2c, line3c, line4c;
+{var p,po, r,y,texta, textb,d, line1c, line2c, line3c, line4c;
  line1c = "If you deposit ";
     p=Number(document.getElementById("principal").value);
     if (isNaN(p) || p < 1) {
         texta = "Amount Input is not valid";
     }else{
         texta = "Amount Input is valid";
+        po = p;
     }
     document.getElementById("demoa").innerHTML=texta;
  
@@ -22,6 +23,8 @@ function compute()
     d=(p*(r/100.0)*y)
     document.getElementById("answer").value=d;
     document.getElementById("line1").innerHTML=line1c;
+ 
+ document.getElementById("pout").value=po;
  
 }
         
