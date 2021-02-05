@@ -35,7 +35,7 @@ function compute()
     document.getElementById("line1").innerHTML=line1c;
  line2c= line2c + ro + "%.";
  document.getElementById("line2").innerHTML=line2c;
- line3c = line3c + dout + ".";
+ line3c = line3c + dout + ",";
  document.getElementById("line3").innerHTML=line3c;
  //document.getElementById("rout").innerHTML=ro;
  //x = new Date();
