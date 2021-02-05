@@ -36,7 +36,7 @@ function compute()
  document.getElementById("rout").innerHTML=ro;
  x = new Date();
  n = (x.getFullYear())+y;
- line4c = line4c + n;
+ //line4c = line4c + n;
  document.getElementById("line4").innerHTML=line4c;
 }
         
