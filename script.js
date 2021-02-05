@@ -23,8 +23,7 @@ function compute()
     d=(p*(r/100.0)*y)
     document.getElementById("answer").value=d;
     document.getElementById("line1").innerHTML=line1c;
- 
- document.getElementById("pout").value=po;
+    document.getElementById("pout").innerHTML=po;
  
 }
         
