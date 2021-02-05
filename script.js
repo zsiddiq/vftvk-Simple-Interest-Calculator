@@ -27,6 +27,8 @@ function compute()
     d=(p*(r/100.0)*y);
     dout = d.toFixed(2);
     //document.getElementById("answer").value=d;
+ x = new Date();
+ n = (x.getFullYear())+y;
  line4c = line4c;
  document.getElementById("line4").innerHTML=line4c;
  line1c= line1c + po + ",";
