@@ -1,5 +1,5 @@
 function compute()
-{var p,po, r,y,texta, textb,d, line1c, line2c, line3c, line4c;
+{var p,po,r,ro,y,texta, textb,d, line1c, line2c, line3c, line4c;
  line1c = "If you deposit ";
     p=Number(document.getElementById("principal").value);
     if (isNaN(p) || p < 1) {
@@ -16,6 +16,7 @@ function compute()
         textb = "Rate Input is not valid";
     }else{
         textb = "Rate Input is valid";
+        ro = r;
     }
     document.getElementById("demob").innerHTML=textb;
  
@@ -24,6 +25,7 @@ function compute()
     document.getElementById("answer").value=d;
     document.getElementById("line1").innerHTML=line1c;
     document.getElementById("pout").innerHTML=po;
+ document.getElementById("rout").innerHTML=ro;
  
 }
         
