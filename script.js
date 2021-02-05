@@ -1,7 +1,8 @@
 function compute()
-{var p,po,r,ro,y,texta, textb,d, line1c, line2c, line3c, line4c;
+{var p,po,r,ro,y,dout, texta, textb,d, line1c, line2c, line3c, line4c;
  line1c = "If you deposit ";
  line2c = "at an interest rate of ";
+ line3c = "You will receive an amount of ";
     p=Number(document.getElementById("principal").value);
     if (isNaN(p) || p < 1) {
         texta = "Amount Input is not valid";
@@ -22,12 +23,15 @@ function compute()
     document.getElementById("demob").innerHTML=textb;
  
     y=Number(document.getElementById("years").value);
-    d=(p*(r/100.0)*y)
+    d=(p*(r/100.0)*y);
+    dout = d;
     document.getElementById("answer").value=d;
  line1c= line1c + po + ",";
     document.getElementById("line1").innerHTML=line1c;
- line2c= line2c + ro + "%";
+ line2c= line2c + ro + "%.";
  document.getElementById("line2").innerHTML=line2c;
+ line3c = line3c + dout + ".";
+ document.getElementById("line3").innerHTML=line3c;
  document.getElementById("rout").innerHTML=ro;
  
 }
