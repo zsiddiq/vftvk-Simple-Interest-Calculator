@@ -8,6 +8,7 @@ function compute()
     if (isNaN(p) || p < 1) {
         alert("Please enter a positive number for principal amount");
         texta = "Amount Input must be positive";
+        document.getElementById("principal").focus();
     }else{
         texta = "Amount Input is valid";
         po = p;
