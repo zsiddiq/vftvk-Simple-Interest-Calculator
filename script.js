@@ -6,6 +6,7 @@ function compute()
  line4c = "in the year ";
     p=Number(document.getElementById("principal").value);
     if (isNaN(p) || p < 1) {
+        alert("Please enter a positive number for principal amount");
         texta = "Amount Input must be positive";
     }else{
         texta = "Amount Input is valid";
