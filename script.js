@@ -40,7 +40,7 @@ function compute()
  n = (x.getFullYear())+y;
  line4c = line4c + n;
  document.getElementById("line4").innerHTML=line4c;
- if (isNaN(po)){ 
+ if (!isNaN(po)){ 
  line1ct= line1ct;
     document.getElementById("line1t").innerHTML=line1ct;
  line1cn= po + ",";
