@@ -29,7 +29,8 @@ function compute()
  if (isNaN(y) || y < 0.0) {
         if (!isNan(ro)) {
  line2ct = line2ct;
-     document.getElementById("line2t").innerHTML=line2ct;textc = "Year Input must be positive";
+     document.getElementById("line2t").innerHTML=line2ct;
+         textc = "Year Input must be positive";
     }else{
         textc = "Year Input is valid";
         yo = y;
@@ -40,8 +41,10 @@ function compute()
     //document.getElementById("answer").value=d;
  x = new Date();
  n = (x.getFullYear())+y;
- line4c = line4c + n;
- document.getElementById("line4").innerHTML=line4c;
+ line4ct = line4ct;
+ line4cn = n;
+ document.getElementById("line4t").innerHTML=line4ct;
+  document.getElementById("line4n").innerHTML=line4cn;
  if (!isNaN(po)){ 
  line1ct= line1ct;
     document.getElementById("line1t").innerHTML=line1ct;
