@@ -5,7 +5,7 @@ var n,p,po,r,ro,x,y,yo,dout, texta, textb,textc,d, line1ct;
  line2ct = "at an interest rate of ";
  line3ct = "You will receive an amount of ";
  line4ct = "in the year ";
- alert("Before principal");
+ //alert("Before principal");
     p=Number(document.getElementById("principal").value);
     if (isNaN(p) || p < 1) {
         alert("Please enter a positive number for principal amount");
