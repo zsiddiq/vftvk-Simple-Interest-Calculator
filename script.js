@@ -1,5 +1,6 @@
 function compute()
-{var n,p,po,r,ro,x,y,yo,dout, texta, textb,textc,d, line1ct, line1cn,line2ct, line2cn, line3ct, line3cn, line4ct, line4cn;
+{var n,p,po,r,ro,x,y,yo,dout, texta, textb,textc,d, line1ct;
+ var line1cn, line2ct, line2cn, line3ct, line3cn, line4ct, line4cn;
  line1ct = "If you deposit ";
  line2ct = "at an interest rate of ";
  line3ct = "You will receive an amount of ";
@@ -37,7 +38,6 @@ function compute()
     document.getElementById("democ").innerHTML=textc;
     d=(p*(r/100.0)*y);
     dout = d.toFixed(2);
-    //document.getElementById("answer").value=d;
  x = new Date();
  n = (x.getFullYear())+y;
   alert("after date calculation");
