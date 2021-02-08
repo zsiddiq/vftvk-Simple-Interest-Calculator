@@ -4,6 +4,7 @@ function compute()
  line2ct = "at an interest rate of ";
  line3ct = "You will receive an amount of ";
  line4ct = "in the year ";
+ alert("before principal");
     p=Number(document.getElementById("principal").value);
     if (isNaN(p) || p < 1) {
         alert("Please enter a positive number for principal amount");
@@ -14,7 +15,7 @@ function compute()
         po = p;
     }
     document.getElementById("demoa").innerHTML=texta;
- alert("first after principal");
+ alert("after principal");
     r=document.getElementById("irate").innerHTML;
  if (isNaN(r) || r < 0.5) {
         textb = "Rate Input must be positive";
