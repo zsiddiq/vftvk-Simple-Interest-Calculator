@@ -28,8 +28,6 @@ function compute()
     y=Number(document.getElementById("years").value);
  if (isNaN(y) || y < 0.0) {
         if (!isNan(ro)) {
- line2ct = line2ct;
-     document.getElementById("line2t").innerHTML=line2ct;
          textc = "Year Input must be positive";
     }else{
         textc = "Year Input is valid";
