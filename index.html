@@ -13,7 +13,8 @@
         Amount </td> <td><input type="number"  id="principal">  
             </td></tr> 
     <tr><td>
-        <label> Interest Rate </label> </td><td>
+        <label> Interest Rate </label> </td>
+        <td>
          <input type="range" min="0.0" max="20.0" value="0.0" step="0.5" id="rate" oninput="document.getElementById('irate').innerHTML = this.value" /> 
         <label id="irate">  </label> %
         </td>
@@ -22,7 +23,8 @@
             No. of Years</td><td> <input type="number"  id="years">
             </td>
     </tr>
-<tr><td>
+<tr>
+    <td>
         <button onclick="compute()">Compute Interest</button>
     </td>
     </tr> 
@@ -54,8 +56,7 @@
         <p id="line4n"></p>
     </td>
     </tr> 
-    </table>
-                     
+    </table>    
      <p id="demoa"></p>
     <p id="demob"></p>
          <p id="democ"></p>
@@ -64,5 +65,4 @@
         </footer>
     </tr>
     </body>
-        
 </html>
