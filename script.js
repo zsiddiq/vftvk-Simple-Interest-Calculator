@@ -16,7 +16,7 @@ var n,p,po,r,ro,x,y,yo,dout, texta, textb,textc,d, line1ct;
         po = p;
     }
     document.getElementById("demoa").innerHTML=texta;
- alert("After principal read");
+ //alert("After principal read");
     r=document.getElementById("irate").innerHTML;
  if (isNaN(r) || r < 0.5) {
         textb = "Rate Input must be positive";
@@ -25,46 +25,46 @@ var n,p,po,r,ro,x,y,yo,dout, texta, textb,textc,d, line1ct;
         ro = r;
     }
     document.getElementById("demob").innerHTML=textb;
- alert("After rate read");
+ //alert("After rate read");
     y=Number(document.getElementById("years").value);
- alert("After years read");
+ //alert("After years read");
  if (isNaN(y) || y < 0.0) {
          textc = "Year Input must be positive";
     }else{
         textc = "Year Input is valid";
         yo = y;
     }
-  alert("after year validated");
+  //alert("after year validated");
     document.getElementById("democ").innerHTML=textc;
     d=(p*(r/100.0)*y);
     dout = d.toFixed(2);
  x = new Date();
  n = (x.getFullYear())+y;
-  alert("after date calculation");
+  //alert("after date calculation");
  line4ct = line4ct;
  line4cn = n;
  document.getElementById("line4t").innerHTML=line4ct;
   document.getElementById("line4n").innerHTML=line4cn;
-  alert("after 4ct and 4cn ");
+  //alert("after 4ct and 4cn ");
  if (!isNaN(po)){ 
  line1ct= line1ct;
     document.getElementById("line1t").innerHTML=line1ct;
  line1cn= po + ",";
     document.getElementById("line1n").innerHTML=line1cn;
  }
-  alert("after date 1ct and 1cn");
+  //alert("after date 1ct and 1cn");
  if (!isNaN(ro)) {
  line2ct = line2ct;
      document.getElementById("line2t").innerHTML=line2ct;
   line2cn= ro + "%.";
   document.getElementById("line2n").innerHTML=line2cn;
   }
-  alert("after 2ct and 2cn");
+  //alert("after 2ct and 2cn");
    if (!isNaN(dout)) {
  line3ct = line3ct;
      document.getElementById("line3t").innerHTML=line3ct;
   line3cn= dout + ",";
   document.getElementById("line3n").innerHTML=line3cn;
   }
- alert("after 3ct and 3cn");
+ //alert("after 3ct and 3cn");
 }
