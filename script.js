@@ -1,9 +1,9 @@
 function compute()
 {var n,p,po,r,ro,x,y,yo,dout, texta, textb,textc,d, line1ct, line1cn,line2ct, line2cn, line3ct, line3cn, line4ct, line4cn;
  line1ct = "If you deposit ";
- line2c = "at an interest rate of ";
- line3c = "You will receive an amount of ";
- line4c = "in the year ";
+ line2ct = "at an interest rate of ";
+ line3ct = "You will receive an amount of ";
+ line4ct = "in the year ";
     p=Number(document.getElementById("principal").value);
     if (isNaN(p) || p < 1) {
         alert("Please enter a positive number for principal amount");
@@ -27,7 +27,9 @@ function compute()
  
     y=Number(document.getElementById("years").value);
  if (isNaN(y) || y < 0.0) {
-        textc = "Year Input must be positive";
+        if (!isNan(ro)) {
+ line2ct = line2ct;
+     document.getElementById("line2t").innerHTML=line2ct;textc = "Year Input must be positive";
     }else{
         textc = "Year Input is valid";
         yo = y;
@@ -46,14 +48,19 @@ function compute()
  line1cn= po + ",";
     document.getElementById("line1n").innerHTML=line1cn;
  }
- line2c= line2c + ro + "%.";
- document.getElementById("line2").innerHTML=line2c;
- line3c = line3c + dout + ",";
- document.getElementById("line3").innerHTML=line3c;
- //document.getElementById("rout").innerHTML=ro;
- //x = new Date();
- //n = (x.getFullYear())+y;
- //line4c = line4c + n;
+ if (!isNan(ro)) {
+ line2ct = line2ct;
+     document.getElementById("line2t").innerHTML=line2ct;
+  line2cn= ro + "%.";
+  document.getElementById("line2n").innerHTML=line2cn;
+  }
+   if (!isNan(dout)) {
+ line3ct = line3ct;
+     document.getElementById("line3t").innerHTML=line3ct;
+  line3cn= dout + ",";
+  document.getElementById("line2n").innerHTML=line3cn;
+  }
+ 
  
 }
         
