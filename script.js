@@ -5,7 +5,7 @@ var n,p,po,r,ro,x,y,yo,dout, texta, textb,textc,d, line1ct;
  line2ct = "at an interest rate of ";
  line3ct = "You will receive an amount of ";
  line4ct = "in the year ";
- alert("before principal");
+ alert("Before principal");
     p=Number(document.getElementById("principal").value);
     if (isNaN(p) || p < 1) {
         alert("Please enter a positive number for principal amount");
@@ -16,7 +16,7 @@ var n,p,po,r,ro,x,y,yo,dout, texta, textb,textc,d, line1ct;
         po = p;
     }
     document.getElementById("demoa").innerHTML=texta;
- alert("after principal");
+ alert("After principal read");
     r=document.getElementById("irate").innerHTML;
  if (isNaN(r) || r < 0.5) {
         textb = "Rate Input must be positive";
@@ -25,16 +25,16 @@ var n,p,po,r,ro,x,y,yo,dout, texta, textb,textc,d, line1ct;
         ro = r;
     }
     document.getElementById("demob").innerHTML=textb;
- alert("second after rate");
+ alert("After rate read");
     y=Number(document.getElementById("years").value);
+ alert("After years read");
  if (isNaN(y) || y < 0.0) {
-        if (!isNan(ro)) {
          textc = "Year Input must be positive";
     }else{
         textc = "Year Input is valid";
         yo = y;
     }
-  alert("after year");
+  alert("after year validated");
     document.getElementById("democ").innerHTML=textc;
     d=(p*(r/100.0)*y);
     dout = d.toFixed(2);
@@ -68,4 +68,4 @@ var n,p,po,r,ro,x,y,yo,dout, texta, textb,textc,d, line1ct;
   }
  alert("after 3ct and 3cn");
 }
-}
+
