@@ -1,4 +1,4 @@
-function compute()
+function compute1()
 {var n,p,po,r,ro,x,y,yo,dout, texta, textb,textc,d, line1ct;
  var line1cn, line2ct, line2cn, line3ct, line3cn, line4ct, line4cn;
  line1ct = "If you deposit ";
@@ -68,4 +68,3 @@ function compute()
   }
  alert("after 3ct and 3cn");
 }
-        
