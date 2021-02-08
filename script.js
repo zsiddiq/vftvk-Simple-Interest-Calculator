@@ -53,14 +53,14 @@ var n,p,po,r,ro,x,y,yo,dout, texta, textb,textc,d, line1ct;
     document.getElementById("line1n").innerHTML=line1cn;
  }
   alert("after date 1ct and 1cn");
- if (!isNan(ro)) {
+ if (!isNaN(ro)) {
  line2ct = line2ct;
      document.getElementById("line2t").innerHTML=line2ct;
   line2cn= ro + "%.";
   document.getElementById("line2n").innerHTML=line2cn;
   }
   alert("after 2ct and 2cn");
-   if (!isNan(dout)) {
+   if (!isNaN(dout)) {
  line3ct = line3ct;
      document.getElementById("line3t").innerHTML=line3ct;
   line3cn= dout + ",";
