@@ -1,5 +1,5 @@
-function compute1()
-{var n,p,po,r,ro,x,y,yo,dout, texta, textb,textc,d, line1ct;
+function compute1(){
+var n,p,po,r,ro,x,y,yo,dout, texta, textb,textc,d, line1ct;
  var line1cn, line2ct, line2cn, line3ct, line3cn, line4ct, line4cn;
  line1ct = "If you deposit ";
  line2ct = "at an interest rate of ";
