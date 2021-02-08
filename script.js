@@ -68,4 +68,3 @@ var n,p,po,r,ro,x,y,yo,dout, texta, textb,textc,d, line1ct;
   }
  alert("after 3ct and 3cn");
 }
-
