@@ -14,9 +14,8 @@ function compute()
         po = p;
     }
     document.getElementById("demoa").innerHTML=texta;
- 
+ alert("first after principal");
     r=document.getElementById("irate").innerHTML;
- //alert(r);
  if (isNaN(r) || r < 0.5) {
         textb = "Rate Input must be positive";
     }else{
@@ -24,7 +23,7 @@ function compute()
         ro = r;
     }
     document.getElementById("demob").innerHTML=textb;
- 
+ alert("second after rate");
     y=Number(document.getElementById("years").value);
  if (isNaN(y) || y < 0.0) {
         if (!isNan(ro)) {
@@ -33,35 +32,39 @@ function compute()
         textc = "Year Input is valid";
         yo = y;
     }
+  alert("after year");
     document.getElementById("democ").innerHTML=textc;
     d=(p*(r/100.0)*y);
     dout = d.toFixed(2);
     //document.getElementById("answer").value=d;
  x = new Date();
  n = (x.getFullYear())+y;
+  alert("after date calculation");
  line4ct = line4ct;
  line4cn = n;
  document.getElementById("line4t").innerHTML=line4ct;
   document.getElementById("line4n").innerHTML=line4cn;
+  alert("after 4ct and 4cn ");
  if (!isNaN(po)){ 
  line1ct= line1ct;
     document.getElementById("line1t").innerHTML=line1ct;
  line1cn= po + ",";
     document.getElementById("line1n").innerHTML=line1cn;
  }
+  alert("after date 1ct and 1cn");
  if (!isNan(ro)) {
  line2ct = line2ct;
      document.getElementById("line2t").innerHTML=line2ct;
   line2cn= ro + "%.";
   document.getElementById("line2n").innerHTML=line2cn;
   }
+  alert("after 2ct and 2cn");
    if (!isNan(dout)) {
  line3ct = line3ct;
      document.getElementById("line3t").innerHTML=line3ct;
   line3cn= dout + ",";
-  document.getElementById("line2n").innerHTML=line3cn;
+  document.getElementById("line3n").innerHTML=line3cn;
   }
- 
- 
+ alert("after 3ct and 3cn");
 }
         
